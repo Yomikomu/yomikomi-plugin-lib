@@ -6,7 +6,7 @@ Yomikomu includes a plugin system that allows developers to extend the applicati
 ## Directory Structure
 
 ```
-~/.shiori/plugins/           # User plugins directory (in home folder)
+~/.yomikomi/plugins/           # User plugins directory (in home folder)
 ├── lib/                     # Shared libraries for all plugins
 │   └── *.jar               # JAR files available to all plugins
 ├── plugin_name/            # Individual plugin directory
@@ -178,7 +178,7 @@ main.class: com.example.MyPlugin
 mvn package
 
 # Install to Yomikomu plugins directory
-cp target/my-plugin.jar ~/.shiori/plugins/my_plugin/
+cp target/my-plugin.jar ~/.yomikomi/plugins/my_plugin/
 ```
 
 ## JAR Manifest Alternative
@@ -243,7 +243,7 @@ public void onReadingComplete(Chapter chapter, Manga manga) {
 Plugins can use libraries from the shared `lib/` folder:
 
 ```
-~/.shiori/plugins/
+~/.yomikomi/plugins/
 ├── lib/
 │   ├── commons-io.jar
 │   └── gson.jar
@@ -254,7 +254,7 @@ Plugins can use libraries from the shared `lib/` folder:
 Plugin-specific libraries go in the plugin's own `lib/` folder:
 
 ```
-~/.shiori/plugins/my_plugin/
+~/.yomikomi/plugins/my_plugin/
 ├── plugin.jar
 └── lib/
     └── custom-library.jar
@@ -302,7 +302,7 @@ Features:
 ## Troubleshooting
 
 ### Plugin Not Loading
-1. Check `~/.shiori/logs/` for errors
+1. Check `~/.yomikomi/logs/` for errors
 2. Verify plugin.yaml syntax
 3. Ensure main class exists and implements YomikomuPlugin
 4. Check API version compatibility
