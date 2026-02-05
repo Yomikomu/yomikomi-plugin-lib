@@ -1,0 +1,29 @@
+
+
+id: com.example.helloworld
+name: Hello World Plugin
+version: 1.0.0
+author: Your Name
+description: A simple example plugin that demonstrates the Shiori plugin system.
+
+capability: GENERAL
+main.class: com.example.HelloWorldPlugin
+
+# Optional fields
+license: MIT
+website: https://github.com/yourusername/shiori-plugins
+dependencies: []
+api.versions: 1.0
+
+# To build a JAR plugin:
+# 1. Create a Java project with Shiori as a dependency
+# 2. Implement the ShioriPlugin interface
+# 3. Add these fields to your JAR's META-INF/MANIFEST.MF:
+#    Plugin-Id: com.example.helloworld
+#    Plugin-Name: Hello World Plugin
+#    Plugin-Version: 1.0.0
+#    Plugin-Author: Your Name
+#    Plugin-Description: A simple example plugin.
+#    Plugin-Capability: GENERAL
+#    Plugin-Main-Class: com.example.HelloWorldPlugin
+
