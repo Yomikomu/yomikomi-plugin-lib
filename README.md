@@ -1,4 +1,7 @@
 # Yomikomu Plugin System Documentation
+[![](https://jitpack.io/v/Yomikomu/yomikomu-plugin-lib.svg)](https://jitpack.io/#Yomikomu/yomikomu-plugin-lib)
+
+
 
 ## Overview
 Yomikomu includes a plugin system that allows developers to extend the application's functionality. Plugins can provide custom manga sources, image processing, UI extensions, analytics, export features, and more.
